@@ -8,7 +8,7 @@ import createRoutes from '../shared/routes'
 import configureStore from '../shared/store/configureStore'
 
 const store = configureStore()
-
+console.log('------------>');
 ReactDOM.render(
     <Provider store={store}>
         {createRoutes(React, browserHistory)}
