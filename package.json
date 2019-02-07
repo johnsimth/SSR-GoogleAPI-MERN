@@ -8,7 +8,7 @@
     "build:webpack:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "build": "npm run clean && npm run build:webpack",
     "build:dev": "npm run clean && npm run build:webpack:dev",
-    "start": "cross-env NODE_PATH=source NODE_ENV=development nodemon source/server/server-wrapper.js",
+    "start": "cross-env NODE_PATH=source NODE_ENV=development node source/server/server-wrapper.js",
     "watch": "watch \"clear && npm run build:dev\" source",
     "hot": "cross-env NODE_ENV=development webpack-dev-server --hot --config webpack.config.js --host 0.0.0.0 --port 9090"
   },
